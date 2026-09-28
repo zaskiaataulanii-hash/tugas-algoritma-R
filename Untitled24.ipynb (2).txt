@@ -1,0 +1,78 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "ir",
+      "display_name": "R"
+    },
+    "language_info": {
+      "name": "R"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "hitung_genap_matriks <- function(m) {\n",
+        "    sum(m %% 2 == 0)\n",
+        "    }\n",
+        "    m <- matrix(1:12, nrow = 3, ncol = 4)\n",
+        "    m\n",
+        "    hitung_genap_matriks(m)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 163
+        },
+        "id": "vtUXyMhk6nMb",
+        "outputId": "3f19f653-5ca7-4467-dccd-21c188d13e35"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<table class=\"dataframe\">\n",
+              "<caption>A matrix: 3 × 4 of type int</caption>\n",
+              "<tbody>\n",
+              "\t<tr><td>1</td><td>4</td><td>7</td><td>10</td></tr>\n",
+              "\t<tr><td>2</td><td>5</td><td>8</td><td>11</td></tr>\n",
+              "\t<tr><td>3</td><td>6</td><td>9</td><td>12</td></tr>\n",
+              "</tbody>\n",
+              "</table>\n"
+            ],
+            "text/markdown": "\nA matrix: 3 × 4 of type int\n\n| 1 | 4 | 7 | 10 |\n| 2 | 5 | 8 | 11 |\n| 3 | 6 | 9 | 12 |\n\n",
+            "text/latex": "A matrix: 3 × 4 of type int\n\\begin{tabular}{llll}\n\t 1 & 4 & 7 & 10\\\\\n\t 2 & 5 & 8 & 11\\\\\n\t 3 & 6 & 9 & 12\\\\\n\\end{tabular}\n",
+            "text/plain": [
+              "     [,1] [,2] [,3] [,4]\n",
+              "[1,] 1    4    7    10  \n",
+              "[2,] 2    5    8    11  \n",
+              "[3,] 3    6    9    12  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "6"
+            ],
+            "text/markdown": "6",
+            "text/latex": "6",
+            "text/plain": [
+              "[1] 6"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
